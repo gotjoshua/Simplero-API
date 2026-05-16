@@ -1261,6 +1261,12 @@ Get tags
   {
     "id": 123,
     "name": "vip-customer"
+    "labels: [
+      { 
+        "id": 123,
+        "name": "tag-label-123"
+      }
+    ]
   }
 ]
 ```
@@ -1269,6 +1275,20 @@ Get tag by ID
 -------------
 
 `GET /tags/123.json` will get a tag by its ID.
+
+**Response:**
+
+```json
+{
+  "id": 123,
+  "name": "vip-customer"
+}
+```
+
+Get tag by name
+-------------
+
+`GET /tags/tag_name.json` will get a tag by its name.
 
 **Response:**
 
